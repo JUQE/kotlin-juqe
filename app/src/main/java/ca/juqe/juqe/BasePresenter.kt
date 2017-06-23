@@ -6,6 +6,4 @@ package ca.juqe.juqe
  */
 interface BasePresenter {
 
-    fun start()
-
 }
