@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_code"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/juqe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:id="@+id/enter_code"
+        android:text="@string/enter_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_marginStart="@dimen/side_margin"
+        android:textSize="@dimen/small_text"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/input_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/side_margin"
+        android:layout_marginRight="@dimen/side_margin"
+        android:layout_below="@+id/enter_code"
+        android:padding="@dimen/edit_text_padding"
+        android:textSize="@dimen/small_text"
+        android:textColor="@color/black"
+        android:background="@color/fieldcolor" />
+
+    <Button
+        android:id="@+id/submit_code_button"
+        android:text="@string/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_code"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginStart="@dimen/side_margin"
+        android:layout_marginEnd="@dimen/side_margin"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/create_venue"
+        android:text="@string/create_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/linkcolor"
+        android:layout_above="@+id/reconnect_venue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:id="@+id/reconnect_venue"
+        android:text="@string/reconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:textColor="@color/linkcolor"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

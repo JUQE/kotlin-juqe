@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Juqe</string>
+    <string name="juqe">Juqe</string>
+    <string name="enter_code">Enter venue code:</string>
+    <string name="enter">Enter</string>
+    <string name="create_new">Create a new Juqe queue</string>
+    <string name="reconnect">Reconnect to your queue</string>
 </resources>
