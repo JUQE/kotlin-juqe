@@ -8,10 +8,10 @@ import ca.juqe.juqe.api.JuqeApi
 
 object InjectionUtil {
 
-//    fun getJuqeApi(context: Context): JuqeApi {
-//        return NetInjection.provideJuqeApi(
-//                NetInjection.provideRetrofit(
-//                        context.getString(R.string.api_domain),
-//                        NetInjection.provideOkHttpClient(Constants.NETWORK_TIMEOUT)))
-//    }
+    fun getJuqeApi(context: Context): JuqeApi {
+        return NetInjection.provideJuqeApi(
+                NetInjection.provideRetrofit(
+                        "https://api.spotify.com",
+                        NetInjection.provideOkHttpClient(Constants.NETWORK_TIMEOUT)))
+    }
 }

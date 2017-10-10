@@ -5,4 +5,5 @@
     <string name="enter">Enter</string>
     <string name="create_new">Create a new Juqe queue</string>
     <string name="reconnect">Reconnect to your queue</string>
+    <string name="api_domain">https://api.spotify.com</string>
 </resources>
