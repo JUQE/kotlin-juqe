@@ -1,18 +1,13 @@
 package ca.juqe.juqe.auth
 
-import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import ca.juqe.juqe.Constants
 import ca.juqe.juqe.R
+import com.spotify.sdk.android.authentication.AuthenticationClient
 import com.spotify.sdk.android.authentication.AuthenticationRequest
 import com.spotify.sdk.android.authentication.AuthenticationResponse
-import com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE
-import com.spotify.sdk.android.authentication.AuthenticationClient
-import ca.juqe.juqe.MainActivity
-import com.spotify.sdk.android.authentication.LoginActivity.REQUEST_CODE
-import android.content.Intent
-import android.util.Log
 
 
 class AuthActivity: AppCompatActivity() {
